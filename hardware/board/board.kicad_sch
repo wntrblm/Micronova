@@ -5,7 +5,12 @@
   (paper "USLetter")
 
   (title_block
-    (date "2022-05-10")
+    (title "Nickel")
+    (date "2022-05-23")
+    (rev "v2")
+    (company "Winterbloom")
+    (comment 1 "Alethea Flowers")
+    (comment 2 "CERN-OHL-P V2")
   )
 
   (lib_symbols
