@@ -8,7 +8,7 @@ More details available at https://winterbloom.com/shop/nickel
 
 This repository contains the hardware design files and user guide for Nickel:
 
-- **hardware/** contains the hardware design files for the board and blank panel. These are all created using KiCAD.
+- **hardware/** contains the hardware design files for the board. These are all created using KiCAD.
 - **user_guide/** contains the user's guide source files. These are written in Markdown and published using MkDocs.
 
 ## License and contributing
