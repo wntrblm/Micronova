@@ -459,7 +459,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "board.step",
       "vrml": ""
     },
     "page_layout_descr_file": "/Users/stargirl/workspace/kicad-libraries/winterbloom_kicad_library/winterbloom.kicad_wks"
