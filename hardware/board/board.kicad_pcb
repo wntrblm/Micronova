@@ -1091,7 +1091,7 @@
     (descr "Barrel connector polarity indicator")
     (tags "barrel polarity")
     (attr board_only exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -2) (layer "F.SilkS") hide
+    (fp_text reference "POLARITY" (at 0 -2) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ce497a0e-f9e1-42a7-bb38-019dd70fe190)
     )
@@ -2130,7 +2130,7 @@
     (tedit 0) (tstamp 1ca6b55e-d9d0-463a-ad5e-a744c3f30041)
     (at 105.4 108.075 180)
     (attr board_only exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "G***" (at 0 0) (layer "B.SilkS") hide
+    (fp_text reference "WNTR" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
       (tstamp 0ebecfc1-4507-44be-bf67-acb2c881059a)
     )
@@ -4617,7 +4617,7 @@
     (tedit 0) (tstamp 743f6ad0-5bdb-43f8-8bcd-1e39e69e82e9)
     (at 65.1 108.075 180)
     (attr board_only exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "G***" (at 0 0) (layer "B.SilkS") hide
+    (fp_text reference "NICKEL" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
       (tstamp 9bcf7a31-c676-421d-8578-ff1ef46ff331)
     )
@@ -5238,8 +5238,8 @@
     (at 153.95 108.525 180)
     (descr "Open Source Hardware Logo")
     (tags "Logo OSHW")
-    (attr exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 0) (layer "B.SilkS") hide
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "OSHW" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 68160881-f219-4fa9-a14a-fe52ced24106)
     )
