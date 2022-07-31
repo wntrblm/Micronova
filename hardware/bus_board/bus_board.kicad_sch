@@ -5,12 +5,13 @@
   (paper "USLetter")
 
   (title_block
-    (title "Nickel: bus board")
-    (date "2022-06-13")
-    (rev "v1")
+    (title "Micronova bus board")
+    (date "2022-07-31")
+    (rev "v2")
     (company "Winterbloom")
     (comment 1 "Alethea Flowers")
     (comment 2 "CERN-OHL-P V2")
+    (comment 3 "micronova.wntr.dev")
   )
 
   (lib_symbols
