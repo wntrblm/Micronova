@@ -1,6 +1,6 @@
 # Winterbloom Nickel License and Copyright Notices
 
-Nickel is (c) 2021 by Winterbloom / Alethea Katherine Flowers
+Micronova is (c) 2021 by Winterbloom / Alethea Katherine Flowers
 
 This notice must be included in any distributions of this project or
 derivative works.
