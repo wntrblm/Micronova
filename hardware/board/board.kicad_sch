@@ -11,6 +11,7 @@
     (company "Winterbloom")
     (comment 1 "Alethea Flowers")
     (comment 2 "CERN-OHL-P V2")
+    (comment 3 "micronova.wntr.dev")
   )
 
   (lib_symbols
