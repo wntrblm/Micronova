@@ -1897,7 +1897,7 @@
     )
     (fp_text user "--font 'Space Mono' --size 4 --bold +" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp 0a06f6c8-2e83-481a-9950-06f6775a3f16)
     )
     (fp_poly (pts
         (xy 0.25 -0.23)
@@ -1998,7 +1998,7 @@
     )
     (fp_text user "" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp 5765b508-63f9-4d83-9ebf-8fab4648a6ca)
     )
     (fp_poly (pts
         (xy 0.9007 -1.20894)
@@ -2399,7 +2399,7 @@
     )
     (fp_text user "--size 2.5 --style box /15-20VDC/" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp 6a9206f0-f78c-4b79-b8cd-108e26cccb07)
     )
     (fp_poly (pts
         (xy 7.264277 -1.3875)
@@ -3354,7 +3354,7 @@
     )
     (fp_text user "" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp ae6f62cb-ff1a-4f1e-af28-9bb9b0dc7a8c)
     )
     (fp_poly (pts
         (xy 0.158434 -1.209968)
@@ -3709,7 +3709,7 @@
     )
     (fp_text user "--size 1.5 --style box '(-12V)'" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp ab54e8f5-b209-47a5-903a-fd32680e3989)
     )
     (fp_poly (pts
         (xy -0.61 -0.525)
@@ -4214,7 +4214,7 @@
     )
     (fp_text user "--size 1.5 --style box '(GND)'" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp 07e33d5c-404e-4b21-89d6-bc3e1437c8e6)
     )
     (fp_poly (pts
         (xy 0.990646 -0.537002)
@@ -4675,7 +4675,7 @@
     )
     (fp_text user "" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp ad6b7b5e-ef0e-42a2-bcce-96eedf5ac1ee)
     )
     (fp_poly (pts
         (xy 0.9007 -1.20894)
@@ -5076,7 +5076,7 @@
     )
     (fp_text user "" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp f4062256-53a1-41bc-873c-a433d267257c)
     )
     (fp_poly (pts
         (xy 1.67 -0.04)
@@ -6279,7 +6279,7 @@
     )
     (fp_text user "--size 1.5 --style box '(switch)'" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp 188ae833-63c2-445f-be9c-3ef3bd8e6825)
     )
     (fp_poly (pts
         (xy -1.193334 -0.146667)
@@ -7089,7 +7089,7 @@
     )
     (fp_text user "--size 1.5 --style box '(+5V)'" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp b075e36b-cf42-4b16-91a1-dafe4c0ecb61)
     )
     (fp_poly (pts
         (xy 0.657887 -1.028686)
@@ -7499,7 +7499,7 @@
     )
     (fp_text user "--size 1.5 --style box '(+12V)'" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp 81caa9b5-9e4e-4baf-8963-a3c534e19ee3)
     )
     (fp_poly (pts
         (xy 0.205295 -1.029995)
@@ -7923,15 +7923,15 @@
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "G***" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
-      (tstamp ba3a2b69-f818-4878-b558-268123e379e9)
+      (tstamp acdd10c7-8677-4844-8e77-6cff8e66ffc0)
     )
     (fp_text value "LOGO" (at 0.75 0) (layer "F.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
-      (tstamp 042d734a-e105-4e6a-a8cc-728e73f43252)
+      (tstamp cee9daf8-b85b-44af-9b96-c2f0e2155237)
     )
     (fp_text user "--font 'Space Mono' --size 4 --bold +" (at 0 0 unlocked) (layer "F.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp 47d51d51-6991-4bd9-a275-db70b254d0e7)
     )
     (fp_poly (pts
         (xy 0.25 -0.23)
@@ -7947,7 +7947,7 @@
         (xy -0.22 -0.83)
         (xy 0.25 -0.83)
         (xy 0.25 -0.23)
-      ) (layer "F.SilkS") (width 0.01) (fill solid) (tstamp 9a0f51f1-76d8-45d3-8467-4e84f74e3518))
+      ) (layer "F.SilkS") (width 0.01) (fill solid) (tstamp 8fa3d497-9a9b-46a4-a2bb-7e814f4c5141))
   )
 
   (footprint "winterbloom:BarrelJack_CUI_PJ-102AH_Horizontal" (layer "F.Cu")
@@ -10712,7 +10712,7 @@
     )
     (fp_text user "" (at 0 0 unlocked) (layer "B.Fab") hide
       (effects (font (size 0.7 0.7) (thickness 0.15)) (justify mirror))
-      (tstamp 5fc858c7-d6ee-480d-8735-c54b7e2ea66a)
+      (tstamp 0f5737b1-56b1-41d8-91ca-84b2826b63bd)
     )
     (fp_poly (pts
         (xy 0.253414 0.969048)
@@ -13476,6 +13476,15 @@
   (gr_text "PCB Specifications:\n- 2 copper layers\n- Size: 100 x 30 mm\n- Thickness: 1.6 mm\n- Material: FR4 TG-140+\n- Min track width/spacing: 0.153 mm (5 mil)\n- Min hole size: 0.3 mm\n- Soldermask: Pink/Purple/Matte Black\n- Silkscreen: Black/White\n- Finish: ENIG 2U{dblquote}\n- Copper: 1 oz\n- UL Marking: on bottom silkscreen\n" (at 174.5 108.075) (layer "Cmts.User") (tstamp 5b8c3553-97aa-4993-9017-5deb47b5f1c5)
     (effects (font (size 2 2) (thickness 0.15)) (justify left))
   )
+  (dimension (type aligned) (layer "Dwgs.User") (tstamp ef25d5a9-d137-4c81-b496-6e9c6210b3f3)
+    (pts (xy 73.25 102.925) (xy 119.25 102.925))
+    (height -16.75)
+    (gr_text "46.0000 mm" (at 96.25 85.025) (layer "Dwgs.User") (tstamp b0dd9a32-84db-46dc-b7b4-ea46fab27631)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (format (units 3) (units_format 1) (precision 4))
+    (style (thickness 0.1) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
+  )
   (dimension (type orthogonal) (layer "Dwgs.User") (tstamp 0bcdd122-818d-45c5-bc1b-d106633c6798)
     (pts (xy 58.5 119.1) (xy 158.5 118.175))
     (height 10.4)
@@ -13515,6 +13524,16 @@
     )
     (format (units 3) (units_format 1) (precision 4))
     (style (thickness 0.1) (arrow_length 1.27) (text_position_mode 1) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
+  )
+  (dimension (type orthogonal) (layer "Dwgs.User") (tstamp dc57c0a7-6517-4150-a3ab-0dfad5986236)
+    (pts (xy 58.5 93.075) (xy 73.25 92.725))
+    (height -6.9)
+    (orientation 0)
+    (gr_text "14.7500 mm" (at 65.875 85.025) (layer "Dwgs.User") (tstamp 78654307-d77e-4ece-8278-f77c80c1c646)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (format (units 3) (units_format 1) (precision 4))
+    (style (thickness 0.1) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
   )
 
   (via (at 126.1 106.375) (size 0.7) (drill 0.3) (layers "F.Cu" "B.Cu") (free) (net 1) (tstamp 01c7b4a8-38f5-457d-97ac-3ae9b62c67d4))
