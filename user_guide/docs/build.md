@@ -40,7 +40,7 @@ Your kit should contain the following items. If any are missing please email us 
     data-list="kit-contents-img-datalist"
     data-stylesheet="/styles/kit-contents-svgmap.css"
     data-info-text-template="kit-contents-img-info-text"
-    data="../images/kit.svg"
+    data="/images/kit.svg"
     height="100%"
     id="kit-contents-img"
     type="image/svg+xml"
@@ -53,14 +53,12 @@ Your kit should contain the following items. If any are missing please email us 
     </g>
 </template>
 <datalist id="kit-contents-img-datalist">
-    <option value="mainboard">Mainboard</option>
-    <option value="panel">Front panel</option>
-    <option value="jacks">1/8" jacks (16)</option>
-    <option value="nuts">Hex nuts for the 1/8" jacks (16)</option>
-    <option value="power-header">Eurorack power header (1)</option>
-    <option value="power-cable">Eurorack power cable (1)</option>
-    <option value="screws">M3x6 screws (2)</option>
-    <option value="rubber-bands">Rubber bands (2)</option>
+    <option value="board">Mainboard</option>
+    <option value="_12v">12V DC-DC converters</option>
+    <option value="_5v">5V DC-DC converter</option>
+    <option value="idc">16 pin IDC headers</option>
+    <option value="barrel">DC barrel jacks</option>
+    <option value="terminal">Screw terminal blocks</option>
 </datalist>
 <script type="module" src="/scripts/svgmap.js"></script>
 <link rel="stylesheet" href="/styles/svgmap.css"/>
@@ -68,7 +66,7 @@ Your kit should contain the following items. If any are missing please email us 
 - (1) Mainboard
 - (2) DC barrel jacks
 - (5) 2-pin screw terminal blocks
-- (2) 2x8 pin shielded IDC headers
+- (2) 16 pin shielded IDC headers
 - (2) 12V DC-DC converters
 - (1) 5V DC-DC converter
 
