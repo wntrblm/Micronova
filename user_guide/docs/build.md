@@ -181,7 +181,7 @@ Repeat for the two 12V converters. They go into spots adjacent to the 5V convert
 
 ![Photo of the back of the board with all of the converters completely soldered](images/28-converters-soldered.jpg)
 
-You're all done! If you have a busboard kit or a front panel kit, continue reading. If not, hop down to [the end](#all-done) for some useful links.
+You're all done! If you have a busboard kit or a front entry kit, continue reading. If not, hop down to [the end](#all-done) for some useful links.
 
 
 ## Busboard

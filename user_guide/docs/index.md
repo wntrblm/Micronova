@@ -182,13 +182,13 @@ Always be aware of Micronova's [power limits](#power-limits) when connecting dow
 
 ## Front entry kit
 
-If you prefer connecting your case's power supply through the front, the [optional front panel kit] provides a 4hp panel with two DC barrel jacks and an illuminated power switch.
+If you prefer connecting your case's power supply through the front, the [optional front entry kit] provides a 4hp panel with two DC barrel jacks and an illuminated power switch.
 
 ![Photo of the front entry kit](images/front-entry.jpg)
 
 This is only available as a kit, please refer to the [build guide](/build#front-entry-kit) for instructions on how to assemble and connect the front entry kit.
 
-[optional front panel kit]: TODO
+[optional front entry kit]: https://winterbloom.com/shop/micronova-front-entry-kit
 
 
 ## Dimensions
