@@ -67,15 +67,22 @@ In some advanced or unusual racks, you may want to power Micronova through its s
 
 Connect your modules to Micronova using either 16-to-10 pin IDC cables or 16-to-16 pin IDC cables.
 
-![Photo of IDC cables](TODO)
+<div class="columns">
+    <div class="column">
+        <img src="images/16-to-10-pin-cable.jpg" alt="Photo of a 16-to-10 pin IDC cable">
+    </div>
+    <div class="column">
+        <img src="images/16-to-16-pin-cable.jpg" alt="Photo of a 16-to-16 pin IDC cable">
+    </div>
+</div>
 
 Be careful to note the polarity of the cable and the connectors on your modules. Polarity indication on modules varies from manufacturer to manufacturer, but most note the side that the red stripe should be on.
 
-![Photo of a module indicating power cable polarity](TODO)
+![Photo of a module indicating power cable polarity](images/power-mark.jpg)
 
 Micronova uses keyed headers so it shouldn't be normally possible to connect power cables backwards on that end.
 
-![Photo of Micronova's keyed headers](TODO)
+![Photo of Micronova's keyed headers](images/keyed-headers.jpg)
 
 If you'd like to power more than two modules, you can use a [Busboard](#busboard) or a [flying bus cable].
 
@@ -97,11 +104,12 @@ When connecting multiple modules make sure that the overall current draw does no
 
 There are a few ways you can check to make sure that you're within Micronova's limits. The first, and easiest, is to check the four LEDs on the board. They should all be illuminated and three of them should be roughly the same brightness, with the one near the `5V` label being slightly dimmer. Any LEDs that are not illuminated or are very faint indicate an issue with your setup. The photo below shows a correctly functioning unit.
 
-![Photo of Micronova's LEDs](TODO)
+![Photo of Micronova's LEDs](images/leds.jpg)
 
 The second way is to check the temperature of Micronova's DC-DC converters. These are the three black boxes on the lower-left of the board. You use a touchless thermometer, thermal camera, or touch the top of them with your finger. It is normal for them to be slightly warm but excessive heat means that Micronova is overloaded.
 
-![Photo of highlighting Micronova's DC-DC converters](TODO)
+![Photo of highlighting Micronova's DC-DC converters](images/dc-dc-converters.jpg)
+
 
 ## Busboard
 
@@ -149,7 +157,7 @@ For the switch to operate, you'll need to sever the copper trace beneath the swi
 
 The trace is shown in red. Use a sharp utility knife or razor blade and carefully cut along the dot lines. There is extra empty space around the trace to make it easier to cut without damaging anything.
 
-![Photo of the trace severed](TODO)
+![Photo of the trace severed](images/switch-severed.jpg)
 
 If you change your mind later and no longer need the switch, you can either place a jumper wire between the two terminals on the terminal block or solder the two pads next to the severed trace together.
 
@@ -167,7 +175,7 @@ Always be aware of Micronova's [power limits](#power-limits) when connecting dow
 
 If you prefer connecting your case's power supply through the front, the [optional front panel kit] provides a 4hp panel with two DC barrel jacks and an illuminated power switch.
 
-![Photo of the front entry kit](TODO)
+![Photo of the front entry kit](images/front-entry.jpg)
 
 This is only available as a kit, please refer to the [build guide](/build#front-entry-kit) for instructions on how to assemble and connect the front entry kit.
 
