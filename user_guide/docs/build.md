@@ -19,6 +19,7 @@ This build takes around **one hour** to complete.
 
 [discord]: https://discord.gg/UpfqghQ
 
+
 ## Tools and materials required
 
 Before jumping in, make sure you have:
@@ -71,13 +72,14 @@ Your kit should contain the following items. If any are missing please email us 
 - (2) 12V DC-DC converters
 - (1) 5V DC-DC converter
 
+
 ## Screw terminals
 
 The first step is placing and soldering the five 2-pin screw terminal blocks.
 
 ![Photo of the board and five screw terminal blocks](images/2-board-and-terminal-blocks.jpg)
 
-While it's faster to solder them all the blocks at the same time, it's much easier to do one at a time. Place a terminal block on the front side of the board, taking care to place it so that the terminal openings face *outward* and match up with the triangles on the board.
+It's easiest to solder one terminal block at a time. Place a terminal block on the front side of the board, taking care to place it so that the terminal openings face *outward* and match up with the triangles on the board.
 
 ![Photo with one of the terminal blocks placed onto the board](images/3-first-terminal-block-placement.jpg)
 
@@ -100,6 +102,7 @@ With the terminal block now flush against the board, solder the second leg into 
 Repeat this process for the four remaining terminal blocks, taking care to align the terminal openings.
 
 ![Photo of the board with all terminal blocks soldered](images/8-all-terminals-soldered.jpg)
+
 
 ## IDC headers
 
@@ -218,7 +221,6 @@ That's it! 🙂
 
 The front entry kit lets you power your Micronova via a 4hp panel in your rack.
 
-
 Your front entry kit should contain the following items. If any are missing please email us at support@winterbloom.com.
 
 ![Photo of the front entry kit's contents](images/front-1-kit-contents.jpg)
@@ -248,7 +250,7 @@ Mount the two DC barrel jacks to the panel, placing the washer and nut onto the 
 
 Wire the jacks and switch together as shown below, being care to wire the the correct leads on the barrel jacks.
 
-![Illustration of the front panel wiring](TODO)
+![Illustration of the front panel wiring](images/front-wiring.svg)
 
 With everything wired up, give it a quick test by plugging in a power cable and making sure that the switch illuminates when switched on. If it does not illuminate or if it stays illuminated even when off, double-check your wiring **before** continuing.
 
@@ -258,7 +260,7 @@ If everything checks out, mount the panel in your rack.
 
 Run the power wires to your Micronova and use the screw terminals to connect them.
 
-![Illustration of power connections](images/screw-terminal-power.svg)
+![Illustration of power connections](images/front-panel-screw-terminal-power.svg)
 
 
 ## All done

@@ -9,13 +9,14 @@
 ![An illustration of Micronova](/images/micronova.svg)
 
 * Available [assembled](https://winterbloom.com/shop/micronova) or as a [kit](https://winterbloom.com/shop/micronova-kit)
+* A tiny 100mm x 30mm board with M3 mounting holes
 * Provides +12V @ 1A, -12V @ 300mA, and +5V @ 500mA
-* Include two 16-pin Eurorack power headers
+* Includes two 16-pin Eurorack power headers
 * Requires a 15V to 20V center positive DC power supply
 * Multiple units can be daisy chained
 * Reverse-polarity, over-current, and over-temperature protection
 * Optional 4hp [front entry kit](https://winterbloom.com/shop/micronova-entry-kit)
-* Optional [busboard](https://winterbloom.com/shop/micronova-busboard-kit)
+* Optional [busboard](https://winterbloom.com/shop/micronova-busboard)
 * [ModularGrid page](https://www.modulargrid.net/e/winterbloom-micronova)
 
 
@@ -30,25 +31,25 @@ Micronova includes some protection features:
 - It has a polyfuse to limit current during a short circuit fault
 - It has independent over-current, short circuit, and over-temperature protection on each of the downstream power rails
 
-These protection features do not avert all risks involved with operating a power supply. Micronova can still experience dangerous, unexpected events. Improper usage significantly increases the possibility of electric shock and fire. **Always use caution**.
+These protection features do not avert all risks involved with operating a power supply. Micronova can still experience dangerous faults from unexpected events. Improper usage significantly increases the possibility of electric shock and fire. **Always use caution**.
 
 
 ## Powering Micronova
 
-Micronova requires a 15-20V DC power supply that can provide **at least** 1A. Micronova has multiple, *interconnected* power input connections. It can be powered using one of the DC barrel jacks or one of the screw terminal blocks on the upper side of the board.
+Micronova requires a 15-20V DC power supply that can provide **at least** 1A. Micronova has multiple, *interconnected* power input connections. It can be powered using one of the two DC barrel jacks or one of the two screw terminal blocks on the upper side of the board.
 
 ![An illustration of Micronova highlighting the power input connection](images/micronova-power-in.svg)
 
 !!! warning
-    Never connect more than one upstream power supply at a time to Micronova. The multiple DC jacks and screw terminals for *daisy chaining* multiple Micronova units to a single upstream supply. Only **one** upstream power supply should be connected. Connecting multiple upstream power supplies can result in damage, electric shock, fire, and bodily harm.
+    Never connect more than one upstream power supply at a time to Micronova. The multiple DC jacks and screw terminals for [daisy chaining](#daisy-chaining) multiple Micronova units to a single upstream supply. Only **one** upstream power supply should be connected. Connecting multiple upstream power supplies can result in irreversible damage, electric shock, and fire.
 
-In most cases, you'll want to use one of the DC barrel jacks. Both Micronova and the optional front entry panel have DC barrel jacks, and either of the two will work. They accept plugs that have a 2.1 mm inner diameter and a 5.5 mm outer diameter. The plug should be **center positive**.
+In most cases, you'll want to use one of the DC barrel jacks. Both Micronova and the optional [front entry panel](#front-entry-kit) have DC barrel jacks, and either of the two jacks will work. They accept plugs that have a 2.1 mm inner diameter and a 5.5 mm outer diameter. The plug should be **center positive**.
 
 ![Illustration of DC barrel jack and polarity](images/jack-and-plug-dimensions.svg)
 
 These AC to DC power supplies are recommended if you're planning to use the DC barrel jacks:
 
-* Mean Well [GST60A15-P1J](https://www.digikey.com/en/products/detail/mean-well-usa-inc/GST60A15-P1J/7703713) which provides 15V @ 4A (60W), enough to power four Micronovas.
+* Mean Well [GST60A15-P1J](https://www.digikey.com/en/products/detail/mean-well-usa-inc/GST60A15-P1J/7703713) which provides 15V @ 4A (60W), enough to power about four Micronovas.
 * Mean Well [GST40A15-P1J](https://www.digikey.com/en/products/detail/mean-well-usa-inc/GST40A15-P1J/7703705) which provides 15V @ 2.6A (40W), enough to power two or three Micronovas.
 * Mean Well [GST25A15-P1J](https://www.digikey.com/en/products/detail/mean-well-usa-inc/GST25A15-P1J/7703649) which provides 15V @ 1.6A (25W), enough to power one Micronova.
 
@@ -58,7 +59,7 @@ All of these power supplies are rated for international use and require a separa
 
 If you need help finding a power supply or want to double check compatibility before purchasing, please [reach out to us](mailto:support@winterbloom.com).
 
-In some advanced or unusual racks, you may want to power Micronova through its screw terminals. This might be the case if you're using a large DC power supply such as Mean Well's [RS series](https://www.digikey.com/en/products/detail/mean-well-usa-inc/RS-150-15/7706170). Ensure that the power supply's voltage output is between 15V and 20V. You can use either of the two screw terminal blocks on the upper side of the board (but not the one labeled `switch`). Connect the power supply to Micronova using appropriately sized hook up wire (20 or 22 AWG stranded is recommended).
+In some advanced or unusual racks, you may want to power Micronova through its screw terminals. This might be the case if you're using a large DC power supply such as Mean Well's [RS series](https://www.digikey.com/en/products/detail/mean-well-usa-inc/RS-150-15/7706170). Ensure that the power supply's voltage output is between 15V and 20V. You can use either of the two screw terminal blocks on the upper side of the board- just not the one labeled `switch`. Connect the power supply to Micronova using appropriately sized hook up wire (20 or 22 AWG stranded is recommended).
 
 ![Illustration of Micronova powered using the screw terminals](images/screw-terminal-power.svg)
 
@@ -76,7 +77,7 @@ Connect your modules to Micronova using either 16-to-10 pin IDC cables or 16-to-
     </div>
 </div>
 
-Be careful to note the polarity of the cable and the connectors on your modules. Polarity indication on modules varies from manufacturer to manufacturer, but most note the side that the red stripe should be on.
+Be careful to note the polarity of the cable and the connectors on your modules. Polarity indication on modules varies from manufacturer to manufacturer, but most note the side that the red stripe (-12V) should be on.
 
 ![Photo of a module indicating power cable polarity](images/power-mark.jpg)
 
@@ -97,25 +98,27 @@ Micronova has limits on how much power it can provide to downstream modules:
 - -12V rail: 300mA
 - +5V rail: 500mA
 
-When connecting multiple modules make sure that the overall current draw does not exceed these limits. Check with each module's manual or manufacturer to determine the current required. If your set up requires more power than a single Micronova can provide, you can [daisy chain](#daisy-chaining) multiple units.
+When connecting multiple modules make sure that the overall current draw does not exceed these limits. Check with each module's manual or manufacturer to determine the current required. [Modulargrid] is also a valueable resource for estimating your system's power requirements. If your set up requires more power than a single Micronova can provide, you can [daisy chain](#daisy-chaining) multiple units.
 
 !!! Warning
-    Overloading Micronova can cause irreversible damage to Micronova and connected modules.
+    Overloading Micronova can cause irreversible damage to Micronova and connected modules. While Micronova has over-current protection on each rail, the voltage drop-out that occurs when this protection is activated can still cause damage in rare cases.
 
 There are a few ways you can check to make sure that you're within Micronova's limits. The first, and easiest, is to check the four LEDs on the board. They should all be illuminated and three of them should be roughly the same brightness, with the one near the `5V` label being slightly dimmer. Any LEDs that are not illuminated or are very faint indicate an issue with your setup. The photo below shows a correctly functioning unit.
 
 ![Photo of Micronova's LEDs](images/leds.jpg)
 
-The second way is to check the temperature of Micronova's DC-DC converters. These are the three black boxes on the lower-left of the board. You use a touchless thermometer, thermal camera, or touch the top of them with your finger. It is normal for them to be slightly warm but excessive heat means that Micronova is overloaded.
+The second way is to check the temperature of Micronova's DC-DC converters. These are the three black boxes on the lower-left of the board. You can use a touchless thermometer, thermal camera, or touch the top of them with your finger. It is normal for them to be slightly warm but excessive heat means that Micronova is overloaded.
 
 ![Photo of highlighting Micronova's DC-DC converters](images/dc-dc-converters.jpg)
+
+[Modulargrid]: https://modulargrid.net
 
 
 ## Busboard
 
-Micronova's two power outputs can be expanded using the [optional busboard](TODO). You'll need to connect Micronova to the busboard using the included 16 pin IDC cable.
+Micronova's two power outputs can be expanded using the [optional busboard](https://winterbloom.com/shop/micronova-busboard). You'll need to connect Micronova to the busboard using the included 16 pin IDC cable.
 
-![Illustration of Micronova and the busboard connected together]().
+![Illustration of Micronova and the busboard connected together](images/busboard-connection.svg).
 
 When connecting multiple modules, make sure to stay within Micronova's [power limits](#power-limits). If you need more power than one Micronova can provide, you can [daisy chain](#daisy-chaining) two or more units.
 
@@ -141,17 +144,21 @@ In some cases you may want to add a power switch to Micronova, such as cases whe
 
 First, if you're using the [front entry kit](#front-entry-kit) there's a power switch on there, so you're all set!
 
+![Photo of the front entry kit](images/front-entry-2.jpg)
+
 Second, you can use an [in-line DC power switch]. This is connected between your AC to DC power supply and Micronova's DC barrel jack. This is useful for small cases where it's easy to reach the power cable and helps reduce wear on the power cable since you don't have to constantly plug and unplug it.
 
 ![Illustration of Micronova with an in-line DC power switch](images/in-line-switch.svg)
 
 [in-line DC power switch]: https://www.adafruit.com/product/1125
 
-Lastly, you can wire a switch to Micronova's `switch` screw terminal block. This is useful in cases where the power cable is not easily accessible or you're powering Micronova through a large DC power supply. You'll need to wire each terminal of the switch to the terminal block as shown:
+Lastly, you can wire a switch to Micronova's `switch` screw terminal block. This is useful in cases where the power cable is not easily accessible or you're powering Micronova through a large DC power supply. We recommend a switch like the [E-Switch EG5448-ND]. If you get an illuminated switch, make sure the LED can handle 15-20V.
+
+You'll need to wire each terminal of the switch to the terminal block as shown:
 
 ![Illustration of wiring a switch to Micronova's switch terminal block](images/switch-terminal-wiring.svg)
 
-For the switch to operate, you'll need to sever the copper trace beneath the switch terminal block.
+You'll also need to sever the copper trace beneath the switch terminal block.
 
 ![Illustration of the switch terminal's copper connection](images/switch-cut.svg)
 
@@ -160,6 +167,8 @@ The trace is shown in red. Use a sharp utility knife or razor blade and carefull
 ![Photo of the trace severed](images/switch-severed.jpg)
 
 If you change your mind later and no longer need the switch, you can either place a jumper wire between the two terminals on the terminal block or solder the two pads next to the severed trace together.
+
+[E-Switch EG5448-ND]: https://www.digikey.com/en/products/detail/e-switch/R1973ABLKGILGF3/3778047
 
 
 ## Output terminals
