@@ -248,7 +248,7 @@ Mount the two DC barrel jacks to the panel, placing the washer and nut onto the 
 
 Wire the jacks and switch together as shown below, being care to wire the the correct leads on the barrel jacks.
 
-![Illustration of the front panel wiring](images/front-wiring.svg)
+![Illustration of the front panel wiring](images/front-wiring.svg){.dark-invert}
 
 With everything wired up, give it a quick test by plugging in a power cable and making sure that the switch illuminates when switched on. If it does not illuminate or if it stays illuminated even when off, double-check your wiring **before** continuing.
 
@@ -258,7 +258,7 @@ If everything checks out, mount the panel in your rack.
 
 Run the power wires to your Micronova and use the screw terminals to connect them.
 
-![Illustration of power connections](images/front-panel-screw-terminal-power.svg)
+![Illustration of power connections](images/front-panel-screw-terminal-power.svg){.dark-outline}
 
 
 ## All done

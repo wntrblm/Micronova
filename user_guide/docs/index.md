@@ -6,7 +6,7 @@
 
 ## Specifications
 
-![An illustration of Micronova](/images/micronova.svg)
+![An illustration of Micronova](/images/micronova.svg){.dark-outline}
 
 * Available [assembled](https://winterbloom.com/shop/micronova) or as a [kit](https://winterbloom.com/shop/micronova-kit)
 * A tiny 100mm x 30mm board with M3 mounting holes
@@ -38,14 +38,14 @@ These protection features do not avert all risks involved with operating a power
 
 Micronova requires a 15-20V DC power supply that can provide **at least** 1A. Micronova has multiple, *interconnected* power input connections. It can be powered using one of the two DC barrel jacks or one of the two screw terminal blocks on the upper side of the board.
 
-![An illustration of Micronova highlighting the power input connection](images/micronova-power-in.svg)
+![An illustration of Micronova highlighting the power input connection](images/micronova-power-in.svg){.dark-outline}
 
 !!! warning
     Never connect more than one upstream power supply at a time to Micronova. The multiple DC jacks and screw terminals for [daisy chaining](#daisy-chaining) multiple Micronova units to a single upstream supply. Only **one** upstream power supply should be connected. Connecting multiple upstream power supplies can result in irreversible damage, electric shock, and fire.
 
 In most cases, you'll want to use one of the DC barrel jacks. Both Micronova and the optional [front entry panel](#front-entry-kit) have DC barrel jacks, and either of the two jacks will work. They accept plugs that have a 2.1 mm inner diameter and a 5.5 mm outer diameter. The plug should be **center positive**.
 
-![Illustration of DC barrel jack and polarity](images/jack-and-plug-dimensions.svg)
+![Illustration of DC barrel jack and polarity](images/jack-and-plug-dimensions.svg){.dark-invert}
 
 These AC to DC power supplies are recommended if you're planning to use the DC barrel jacks:
 
@@ -61,7 +61,7 @@ If you need help finding a power supply or want to double check compatibility be
 
 In some advanced or unusual racks, you may want to power Micronova through its screw terminals. This might be the case if you're using a large DC power supply such as Mean Well's [RS series](https://www.digikey.com/en/products/detail/mean-well-usa-inc/RS-150-15/7706170). Ensure that the power supply's voltage output is between 15V and 20V. You can use either of the two screw terminal blocks on the upper side of the board- just not the one labeled `switch`. Connect the power supply to Micronova using appropriately sized hook up wire (20 or 22 AWG stranded is recommended).
 
-![Illustration of Micronova powered using the screw terminals](images/screw-terminal-power.svg)
+![Illustration of Micronova powered using the screw terminals](images/screw-terminal-power.svg){.dark-outline}
 
 
 ## Connecting modules
@@ -118,7 +118,7 @@ The second way is to check the temperature of Micronova's DC-DC converters. Thes
 
 Micronova's two power outputs can be expanded using the [optional busboard](https://winterbloom.com/shop/micronova-busboard). You'll need to connect Micronova to the busboard using the included 16 pin IDC cable.
 
-![Illustration of Micronova and the busboard connected together](images/busboard-connection.svg).
+![Illustration of Micronova and the busboard connected together](images/busboard-connection.svg){.dark-outline}
 
 When connecting multiple modules, make sure to stay within Micronova's [power limits](#power-limits). If you need more power than one Micronova can provide, you can [daisy chain](#daisy-chaining) two or more units.
 
@@ -127,11 +127,11 @@ When connecting multiple modules, make sure to stay within Micronova's [power li
 
 You can power multiple Micronova units from a single DC power supply. If the Micronova units are in separate cases, you can connect them together using a [DC jumper cable]:
 
-![Illustration of two units connected with a jumper cable](images/daisy-chain-dc.svg)
+![Illustration of two units connected with a jumper cable](images/daisy-chain-dc.svg){.dark-outline}
 
 If you have more than one unit within a single case, you can connect them together using the screw terminal blocks:
 
-![Illustration of two units connected using the screw terminal blocks](images/daisy-chain-terminal-blocks.svg)
+![Illustration of two units connected using the screw terminal blocks](images/daisy-chain-terminal-blocks.svg){.dark-outline}
 
 You can use any combination of the DC jacks and screw terminals to daisy chain **as long as there is only one power supply**. Make sure your power supply can provide enough power to satisfy the current demand of the Micronova units. A good rule of thumb is that you need 1A to 2A for each Micronova.
 
@@ -148,7 +148,7 @@ First, if you're using the [front entry kit](#front-entry-kit) there's a power s
 
 Second, you can use an [in-line DC power switch]. This is connected between your AC to DC power supply and Micronova's DC barrel jack. This is useful for small cases where it's easy to reach the power cable and helps reduce wear on the power cable since you don't have to constantly plug and unplug it.
 
-![Illustration of Micronova with an in-line DC power switch](images/in-line-switch.svg)
+![Illustration of Micronova with an in-line DC power switch](images/in-line-switch.svg){.dark-outline}
 
 [in-line DC power switch]: https://www.adafruit.com/product/1125
 
@@ -156,11 +156,11 @@ Lastly, you can wire a switch to Micronova's `switch` screw terminal block. This
 
 You'll need to wire each terminal of the switch to the terminal block as shown:
 
-![Illustration of wiring a switch to Micronova's switch terminal block](images/switch-terminal-wiring.svg)
+![Illustration of wiring a switch to Micronova's switch terminal block](images/switch-terminal-wiring.svg){.dark-outline}
 
 You'll also need to sever the copper trace beneath the switch terminal block.
 
-![Illustration of the switch terminal's copper connection](images/switch-cut.svg)
+![Illustration of the switch terminal's copper connection](images/switch-cut.svg){.dark-outline}
 
 The trace is shown in red. Use a sharp utility knife or razor blade and carefully cut along the dot lines. There is extra empty space around the trace to make it easier to cut without damaging anything.
 
@@ -175,7 +175,7 @@ If you change your mind later and no longer need the switch, you can either plac
 
 In addition to the two Eurorack 16-pin power headers, Micronova can provide downstream power through the two screw terminals located on the lower side of the board.
 
-![Illustration of Micronova's downstream power terminals](images/downstream-terminals.svg)
+![Illustration of Micronova's downstream power terminals](images/downstream-terminals.svg){.dark-outline}
 
 Always be aware of Micronova's [power limits](#power-limits) when connecting downstream devices.
 
@@ -196,11 +196,12 @@ This is only available as a kit, please refer to the [build guide](/build#front-
 If you'd like to physically mount your Micronova in your case, the following dimensions may be useful.
 
 
-![An illustration of Micronova's dimensions](images/micronova-dimensions.svg)
+![An illustration of Micronova's dimensions](images/micronova-dimensions.svg){.dark-invert}
 
 
-You can also refer to the [KiCAD] files for the [board's hardware design].
+You can [download the SVG] and you can also refer to the [KiCAD] files for the [board's hardware design].
 
+[download the SVG]: images/micronova-dimensions.svg
 [KiCAD]: https://kicad.org
 [board's hardware design]: https://github.com/wntrblm/Micronova/tree/main/hardware/board
 
