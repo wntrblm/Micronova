@@ -1,4 +1,4 @@
-# Winterbloom Nickel License and Copyright Notices
+# Winterbloom Micronova License and Copyright Notices
 
 Micronova is (c) 2021 by Winterbloom / Alethea Katherine Flowers
 
