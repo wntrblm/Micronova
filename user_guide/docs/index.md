@@ -15,7 +15,7 @@
 * Requires a 15V to 20V center positive DC power supply
 * Multiple units can be daisy chained
 * Reverse-polarity, over-current, and over-temperature protection
-* Optional 4hp [front entry kit](https://winterbloom.com/shop/micronova-entry-kit)
+* Optional 4hp [front entry kit](https://winterbloom.com/shop/micronova-front-entry-kit)
 * Optional [busboard](https://winterbloom.com/shop/micronova-busboard)
 * [ModularGrid page](https://www.modulargrid.net/e/winterbloom-micronova)
 
