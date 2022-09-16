@@ -223,7 +223,7 @@ Micronova is completely open source and hacking is encouraged.
 
 The [hardware designs](https://github.com/wntrblm/Micronova/tree/main/hardware) are available under the permissive [CERN-OHL-P v2](https://cern-ohl.web.cern.ch/) and is designed using [KiCAD](https://kicad.org/) which is free and open-source. You can open the hardware files using KiCAD or you can [check out a PDF of the schematic](https://github.com/wntrblm/Micronova/tree/main/hardware/board/board.pdf).
 
-<!-- ![Open Source Hardware Association mark](images/oshw.svg){class=oshw} Micronova is [certified open source hardware](https://certification.oshwa.org/us002071.html) TODO -->
+![Open Source Hardware Association mark](images/oshw.svg){class=oshw} Micronova is [certified open source hardware](https://certification.oshwa.org/us002124.html)
 
 
 ## Warranty, disclaimers, and limits
