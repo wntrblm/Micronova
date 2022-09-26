@@ -155,7 +155,7 @@ The single 5V converter is slightly smaller and has `VX7805-500` marked on it.
 
 ![Photo of the 5V DC-DC converter](images/21-5v-converter.jpg)
 
-The two 12V converters are slightly larger and has `K7812M-100R3` marked on it.
+The two 12V converters are slightly larger and has `K7812M-1000R3` marked on it.
 
 ![Photo of the 12V DC-DC converter](images/22-12v-converter.jpg)
 
