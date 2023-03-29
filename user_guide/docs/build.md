@@ -246,7 +246,7 @@ Mount the two DC barrel jacks to the panel, placing the washer and nut onto the 
 ![Photo of the nut added to the DC barrel jack](images/front-5-barrel-jack-nut.jpg)
 ![Photo of both DC barrel jacks mounted to the panel](images/front-6-both-barrel-jacks-mounted.jpg)
 
-Wire the jacks and switch together as shown below, being care to wire the the correct leads on the barrel jacks.
+Wire the jacks and switch together as shown below, being care to wire the correct leads on the barrel jacks.
 
 ![Illustration of the front panel wiring](images/front-wiring.svg){.dark-invert}
 
