@@ -2,66 +2,60 @@
 title: Kit build guide
 ---
 
-# Micronova kit build guide
-
-[TOC]
-
-
-## Before you build
+# Build
 
 Welcome to the build guide for Micronova's DIY kit. We hope you have a great time putting your Micronova together and a wonderful time using it.
 
-Please **read all instructions** thoroughly before starting. If you have questions or run into trouble please reach out to us on [discord] or drop us an email at support@winterbloom.com.
+Please **read all instructions** thoroughly before starting. If you have questions or run into trouble please reach out to us on [discord] or drop us [an email][email].
 
 Some soldering experience is helpful but not required. If it's your first time soldering we recommend reading through [Adafruit's guide to excellent soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering).
 
+This is a **beginner level** kit. Some soldering experience is helpful but not required, though we recommend practicing on another project first. We also have some slightly easier kits available, such as our [Helium kit]. Even if you've got some experience, we recommend taking a look at [Adafruit's guide to excellent soldering][adafruit soldering guide].
+
 This build takes around **one hour** to complete.
 
+[TOC]
+
 [discord]: https://discord.gg/UpfqghQ
+[email]: mailto:support@winterbloom.com
+[Helium kit]: https://winterbloom.com/shop/helium-kit
+[adafruit soldering guide]: https://learn.adafruit.com/adafruit-guide-excellent-soldering
 
 
-## Tools and materials required
+## Tools required
 
-Before jumping in, make sure you have:
+Before you begin, make sure that you've got:
 
-* Safety glasses. Yes, really.
-* Proper ventilation- at least open a window or two.
-* A soldering iron, like [this one](https://www.adafruit.com/product/180).
-* Solder, we can recommend [Adafruit's 60/40 **no-clean** rosin core solder](https://www.adafruit.com/product/145). We suggest using soldering with "no clean" flux. If you do use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder.
+-   Safety glasses. Yes, **really**. A pair like [these][safety glasses] are fine.
+-   Proper ventilation, like this [small filtered fan](https://a.co/d/eUfPCRO).
+-   A **temperature-controlled** soldering iron, like this [Hakko] or the [Pinecil]. It is very important to use a temperature-controlled iron, since unregulated irons can easily get hot enough to damage components. You should set your iron temperature based on your solder manufacturer's recommendations.
+-   Solder. We recommend [Adafruit's SAC305 solder][adafruit solder] or [Kester 275 K100LD].
+-   A small flat head screwdriver, like [this one][small screwdriver].
+
+!!! question "Flux"
+    We suggest using solder with "no clean" flux. If you use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder. Take special care with the LEDs and potentiometers, as they can be damaged by water and flux cleaners.
+
+[safety glasses]: https://a.co/d/dMXvPP6
+[tweezers]: https://www.adafruit.com/product/422
+[Hakko]: https://www.adafruit.com/product/1204
+[Pinecil]: https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/
+[adafruit solder]: https://www.adafruit.com/product/734
+[Kester 275 K100LD]: https://www.kester.com/products/product/275-flux-cored-wire
+[flux pen]: https://www.sra-solder.com/sra-312-no-clean-flux-pen-refillable
 
 
 ## Kit contents
 
 Your kit should contain the following items. If any are missing please email us at support@winterbloom.com.
 
-<object
-    alt="Kit contents"
-    data-is-svg-map
-    data-list="kit-contents-img-datalist"
-    data-stylesheet="/styles/kit-contents-svgmap.css"
-    data-info-text-template="kit-contents-img-info-text"
-    data="/images/kit.svg"
-    height="100%"
-    id="kit-contents-img"
-    type="image/svg+xml"
-    width="100%">
-</object>
-<template id="kit-contents-img-info-text">
-    <g id="info-text-container">
-        <rect data-size-to="info-text"></rect>
-        <text id="info-text"></text>
-    </g>
-</template>
-<datalist id="kit-contents-img-datalist">
-    <option value="board">Mainboard</option>
-    <option value="_12v">12V DC-DC converters</option>
-    <option value="_5v">5V DC-DC converter</option>
-    <option value="idc">16 pin IDC headers</option>
-    <option value="barrel">DC barrel jacks</option>
-    <option value="terminal">Screw terminal blocks</option>
-</datalist>
-<script type="module" src="/scripts/svgmap.js"></script>
-<link rel="stylesheet" href="/styles/svgmap.css"/>
+<winter-image-map src="../images/kit.svg">
+    <winter-image-map-item id="board">Mainboard</winter-image-map-item>
+    <winter-image-map-item id="_12v">12V DC-DC converters</winter-image-map-item>
+    <winter-image-map-item id="_5v">5V DC-DC converter</winter-image-map-item>
+    <winter-image-map-item id="idc">16 pin IDC headers</winter-image-map-item>
+    <winter-image-map-item id="barrel">DC barrel jacks</winter-image-map-item>
+    <winter-image-map-item id="terminal">Screw terminal blocks</winter-image-map-item>
+</winter-image-map>
 
 - (1) Mainboard
 - (2) DC barrel jacks
@@ -265,4 +259,4 @@ Run the power wires to your Micronova and use the screw terminals to connect the
 
 Congratulations! You've finished your very own Micronova!
 
-Now that it's all put together go check out the [User's Guide](/) and please show us your work by tweeting at [@wntrblm](https://twitter.com/wntrblm) or tagging [@wntrblm](https://instagram.com/wntrblm) in your instagram post.
+Now that it's all put together go check out the [User's Guide](index.md) and please show us your work by tweeting at [@wntrblm](https://twitter.com/wntrblm) or tagging [@wntrblm](https://instagram.com/wntrblm) in your instagram post.
