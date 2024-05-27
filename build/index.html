@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" /><!-- Page author --><link rel="canonical" href="https://micronova.wntr.dev/build/" /><link
+  rel="shortcut icon"
+  sizes="192x192"
+  href="/icon.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="192x192"
+  href="/icon.png" />
+
+<meta name="generator" content="mkdocs-1.6.0" /><!-- Title --><title>
+          Micronova
+          
+            
+          
+
+          
+            - Kit build guide
+          
+        </title><link rel="stylesheet" href="../winter.css" /></head>
+
+  <body
+    class=""
+    data-page="build/"><header>
+        <nav role="navigation" aria-label="main navigation">
+          <ul>
+            <li>
+              <a href="..">Micronova</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img class="logo" src="/winterbloom.png" alt="Winterbloom logo" />
+            </li>
+          </ul>
+        </nav>
+        <nav role="navigation" aria-label="secondary navigation">
+          <ul class="has-dividers"><li>
+                <a
+                  
+                  href="..">
+                  Manual
+                </a>
+              </li><li>
+                <a
+                  aria-current
+                  href="./">
+                  Build
+                </a>
+              </li></ul>
+          <ul><li>
+                <winter-icon>search</winter-icon>
+              </li><li>
+              <winter-dark-mode></winter-dark-mode>
+            </li>
+          </ul>
+        </nav>
+      </header><main
+      class="hide-title">
+  <article class="content"><h1 id="build">Build<a class="headerlink" href="#build" title="Permanent link">#</a></h1>
+<p>Welcome to the build guide for Micronova's DIY kit. We hope you have a great time putting your Micronova together and a wonderful time using it.</p>
+<p>Please <strong>read all instructions</strong> thoroughly before starting. If you have questions or run into trouble please reach out to us on <a href="https://discord.gg/UpfqghQ">discord</a> or drop us <a href="mailto:support@winterbloom.com">an email</a>.</p>
+<p>Some soldering experience is helpful but not required. If it's your first time soldering we recommend reading through <a href="https://learn.adafruit.com/adafruit-guide-excellent-soldering">Adafruit's guide to excellent soldering</a>.</p>
+<p>This is a <strong>beginner level</strong> kit. Some soldering experience is helpful but not required, though we recommend practicing on another project first. We also have some slightly easier kits available, such as our <a href="https://winterbloom.com/shop/helium-kit">Helium kit</a>. Even if you've got some experience, we recommend taking a look at <a href="https://learn.adafruit.com/adafruit-guide-excellent-soldering">Adafruit's guide to excellent soldering</a>.</p>
+<p>This build takes around <strong>one hour</strong> to complete.</p>
+<div class="toc">
+<ul>
+<li><a href="#tools-required">Tools required</a></li>
+<li><a href="#kit-contents">Kit contents</a></li>
+<li><a href="#screw-terminals">Screw terminals</a></li>
+<li><a href="#idc-headers">IDC headers</a></li>
+<li><a href="#dc-barrel-jacks">DC barrel jacks</a></li>
+<li><a href="#dc-dc-converters">DC-DC converters</a></li>
+<li><a href="#busboard">Busboard</a></li>
+<li><a href="#front-entry-kit">Front entry kit</a></li>
+<li><a href="#all-done">All done</a></li>
+</ul>
+</div>
+<h2 id="tools-required">Tools required<a class="headerlink" href="#tools-required" title="Permanent link">#</a></h2>
+<p>Before you begin, make sure that you've got:</p>
+<ul>
+<li>Safety glasses. Yes, <strong>really</strong>. A pair like <a href="https://a.co/d/dMXvPP6">these</a> are fine.</li>
+<li>Proper ventilation, like this <a href="https://a.co/d/eUfPCRO">small filtered fan</a>.</li>
+<li>A <strong>temperature-controlled</strong> soldering iron, like this <a href="https://www.adafruit.com/product/1204">Hakko</a> or the <a href="https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/">Pinecil</a>. It is very important to use a temperature-controlled iron, since unregulated irons can easily get hot enough to damage components. You should set your iron temperature based on your solder manufacturer's recommendations.</li>
+<li>Solder. We recommend <a href="https://www.adafruit.com/product/734">Adafruit's SAC305 solder</a> or <a href="https://www.kester.com/products/product/275-flux-cored-wire">Kester 275 K100LD</a>.</li>
+<li>A small flat head screwdriver, like [this one][small screwdriver].</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">Flux</p>
+<p>We suggest using solder with "no clean" flux. If you use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder. Take special care with the LEDs and potentiometers, as they can be damaged by water and flux cleaners.</p>
+</div>
+<h2 id="kit-contents">Kit contents<a class="headerlink" href="#kit-contents" title="Permanent link">#</a></h2>
+<p>Your kit should contain the following items. If any are missing please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;</a>.</p>
+<p><winter-image-map src="../images/kit.svg">
+    <winter-image-map-item id="board">Mainboard</winter-image-map-item>
+    <winter-image-map-item id="_12v">12V DC-DC converters</winter-image-map-item>
+    <winter-image-map-item id="_5v">5V DC-DC converter</winter-image-map-item>
+    <winter-image-map-item id="idc">16 pin IDC headers</winter-image-map-item>
+    <winter-image-map-item id="barrel">DC barrel jacks</winter-image-map-item>
+    <winter-image-map-item id="terminal">Screw terminal blocks</winter-image-map-item>
+</winter-image-map></p>
+<ul>
+<li>(1) Mainboard</li>
+<li>(2) DC barrel jacks</li>
+<li>(5) 2-pin screw terminal blocks</li>
+<li>(2) 16 pin shielded IDC headers</li>
+<li>(2) 12V DC-DC converters</li>
+<li>(1) 5V DC-DC converter</li>
+</ul>
+<h2 id="screw-terminals">Screw terminals<a class="headerlink" href="#screw-terminals" title="Permanent link">#</a></h2>
+<p>The first step is placing and soldering the five 2-pin screw terminal blocks.</p>
+<p><img alt="Photo of the board and five screw terminal blocks" src="../images/2-board-and-terminal-blocks.jpg" /></p>
+<p>It's easiest to solder one terminal block at a time. Place a terminal block on the front side of the board, taking care to place it so that the terminal openings face <em>outward</em> and match up with the triangles on the board.</p>
+<p><img alt="Photo with one of the terminal blocks placed onto the board" src="../images/3-first-terminal-block-placement.jpg" /></p>
+<p>Hold the terminal block in place and flip the board over. It's okay if the terminal block isn't completely flush against the board, as long as the legs are through the holes.</p>
+<p><img alt="Photo with the board flipped over and the terminal block's legs poking through the board" src="../images/4-first-terminal-block-flipped.jpg" /></p>
+<p>Solder one leg of the terminal block to hold it in place.</p>
+<p><img alt="Photo with one leg of the terminal block soldered to the board" src="../images/5-first-terminal-tack.jpg" /></p>
+<p>Lift the board and use your iron to reflow the solder and push the terminal block flush against the board. Wait a few seconds for the joint to solidify before releasing the board.</p>
+<p><img alt="Photo with one leg of the terminal block being pushed flush against the board while applying the soldering iron to the joint" src="../images/6-first-terminal-flush.jpg" /></p>
+<p>With the terminal block now flush against the board, solder the second leg into place.</p>
+<p><img alt="Photo of the back of the board with both legs of the terminal block soldered" src="../images/7-first-terminal-second-leg.jpg" /></p>
+<p>Repeat this process for the four remaining terminal blocks, taking care to align the terminal openings.</p>
+<p><img alt="Photo of the board with all terminal blocks soldered" src="../images/8-all-terminals-soldered.jpg" /></p>
+<h2 id="idc-headers">IDC headers<a class="headerlink" href="#idc-headers" title="Permanent link">#</a></h2>
+<p>Your next task is placing and soldering the two 16 pin shielded IDC headers.</p>
+<p><img alt="Photo of the two 16-pin shielded IDC headers" src="../images/10-16-pin-headers.jpg" /></p>
+<p>Place both of them on the front side of the board, being careful to align the notch in the header's shield with the drawing on the board. The board is designed to hold on to these headers tightly, so you might have to give a little pressure to push them all the way in.</p>
+<p><img alt="Photo of the first header placed on the front side of the board" src="../images/11-first-header-placement.jpg" />
+<img alt="Photo of the second header placed on the front side of the board" src="../images/12-second-header-placement.jpg" /></p>
+<p>Once you have both placed, flip the board over and solder just one pin on each header to tack it in place.</p>
+<p><img alt="Photo of one pin on the header soldered to hold the header in place" src="../images/13-header-tack.jpg" />
+<img alt="Photo of the second header with one pin soldered to hold it in place" src="../images/14-header-tack-2.jpg" /></p>
+<p>Double check that both headers are completely flush against the board, if they aren't, you can fix them using the same technique you used with the screw terminals. Once you've checked the placement, solder all 16 pins on both headers. You should be able to do them both at the same time, but if you're having trouble feel free to do them one at a time like you did with the terminal blocks.</p>
+<p><img alt="Photo of all of the pins on both headers soldered" src="../images/15-headers-soldered.jpg" /></p>
+<h2 id="dc-barrel-jacks">DC barrel jacks<a class="headerlink" href="#dc-barrel-jacks" title="Permanent link">#</a></h2>
+<p>Next up is placing and soldering the two DC barrel jacks.</p>
+<p><img alt="Photo of the two DC barrel jacks" src="../images/16-barrel-jacks.jpg" /></p>
+<p>Similar to the terminal blocks, it's easiest to place these one at a time. Place one on the front side.</p>
+<p><img alt="Photo of one barrel jack placed on the front side of the board" src="../images/17-barrel-jack-placement.jpg" /></p>
+<p>Then carefully flip the board over and solder just one leg to hold the barrel jack in place.</p>
+<p><img alt="Photo of the back of the board with the barrel jack legs poking through" src="../images/18-barrel-jack-flipped.jpg" />
+<img alt="Photo of one pin on the barrel jack soldered" src="../images/19-barrel-jack-tack.jpg" /></p>
+<p>Just as you did with the terminal blocks, lift the board and use your iron to reflow the solder and push the barrel jack flush against the board. Wait a few seconds for the joint to solidify before releasing the board.</p>
+<p>With the barrel jack flush and held in place, solder the remaining two legs.</p>
+<p>Finally, repeat this process for the second barrel jack.</p>
+<p><img alt="Photo of the back of the board with both barrel jacks completely soldered" src="../images/20-barrel-jacks-soldered.jpg" /></p>
+<h2 id="dc-dc-converters">DC-DC converters<a class="headerlink" href="#dc-dc-converters" title="Permanent link">#</a></h2>
+<p>The last step is to solder the three DC-DC converters. There are two 12V converters and one 5V converter. You'll need to identify them before placing them since they <strong>must</strong> be placed correctly for Micronova to work.</p>
+<p>The single 5V converter is slightly smaller and has <code>VX7805-500</code> marked on it.</p>
+<p><img alt="Photo of the 5V DC-DC converter" src="../images/21-5v-converter.jpg" /></p>
+<p>The two 12V converters are slightly larger and has <code>K7812M-1000R3</code> marked on it.</p>
+<p><img alt="Photo of the 12V DC-DC converter" src="../images/22-12v-converter.jpg" /></p>
+<p>Start by placing the <strong>5V</strong> converter on the front side of the board. It goes in the spot labeled <code>5V</code> on the lower left. Make sure the converter is oriented correctly so that it fits nicely within the white rectangle on the board.</p>
+<p><img alt="Photo of the 5V converter placed onto the front side of the board" src="../images/23-5v-converter-placement.jpg" /></p>
+<p>Carefully flip the board over and solder one leg to hold the converter in place.</p>
+<p><img alt="Photo of the back of the board with just one left of the 5V converter soldered into place" src="../images/24-5v-converter-tack.jpg" /></p>
+<p>Using the same technique as the DC barrel jacks and terminal blocks, reflow the solder and push the DC-DC converter flush against the board.</p>
+<p><img alt="Photo of the 5V converter being pushed flush against the board while heat is applied to the solder joint using a soldering iron" src="../images/25-5v-converter-flush.jpg" /></p>
+<p>Once the DC-DC converter is flush, solder the remaining legs.</p>
+<p>Repeat for the two 12V converters. They go into spots adjacent to the 5V converter marked <code>12V</code>. Again, make sure that they are oriented to match up with the corresponding white rectangle on the board.</p>
+<p><img alt="Photo of one of the 12V converters placed on the board" src="../images/26-12v-converter-placement.jpg" /></p>
+<p><img alt="Photo of the second 12V converter placed on the board" src="../images/27-second-12v-converter-placement.jpg" /></p>
+<p><img alt="Photo of the back of the board with all of the converters completely soldered" src="../images/28-converters-soldered.jpg" /></p>
+<p>You're all done! If you have a busboard kit or a front entry kit, continue reading. If not, hop down to <a href="#all-done">the end</a> for some useful links.</p>
+<h2 id="busboard">Busboard<a class="headerlink" href="#busboard" title="Permanent link">#</a></h2>
+<p>The busboard kit adds six additional power headers to your Micronova.</p>
+<p>Your busboard kit should contain the following items. If any are missing please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;</a>.</p>
+<p><img alt="Photo of the busboard kit's contents" src="../images/bus-1-kit-contents.jpg" /></p>
+<ul>
+<li>(1) Busboard PCB</li>
+<li>(7) 2x8 pin shielded IDC headers</li>
+<li>(1) 16 pin to 16 pin IDC cable (not pictured)</li>
+</ul>
+<p>Assembling the busboard kit is fairly straightforward. Start by placing all seven IDC headers on the front side of the board, making sure to align the notch in the header's shield with the drawing on the board. The board is designed to hold on to these headers tightly, so you might have to give a little pressure to push them all the way in.</p>
+<p><img alt="Photo of three of the headers placed on the front of the board" src="../images/bus-2-header-placement.jpg" />
+<img alt="Photo of all seven headers placed on the front of the board" src="../images/bus-3-headers-all-placed.jpg" /></p>
+<p>Flip the board over and solder one pin on each header to tack them into place.</p>
+<p><img alt="Photo of the back of the board with the legs of all of the headers poking through" src="../images/bus-4-flipped.jpg" />
+<img alt="Photo of one pin on the first header soldered" src="../images/bus-5-tacking.jpg" />
+<img alt="Photo of one pin on the second header soldered" src="../images/bus-6-tacking-2.jpg" />
+<img alt="Photo of one pin on each header soldered" src="../images/bus-7-tacking-3.jpg" /></p>
+<p>Make sure that the headers are all flush against the board and adjust if needed by re-heating the solder joints. Once you're sure they're all flush, solder them all in to place.</p>
+<p><img alt="Photo of all headers completely soldered to the board" src="../images/bus-8-soldered.jpg" /></p>
+<p>That's it! 🙂</p>
+<h2 id="front-entry-kit">Front entry kit<a class="headerlink" href="#front-entry-kit" title="Permanent link">#</a></h2>
+<p>The front entry kit lets you power your Micronova via a 4hp panel in your rack.</p>
+<p>Your front entry kit should contain the following items. If any are missing please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;</a>.</p>
+<p><img alt="Photo of the front entry kit's contents" src="../images/front-1-kit-contents.jpg" /></p>
+<ul>
+<li>(1) Front entry panel</li>
+<li>(2) Panel mount DC barrel jacks, including washers and nuts</li>
+<li>(1) Rocker switch</li>
+<li>(2) M3x6 mounting screws (not pictured)</li>
+</ul>
+<p>You will need hook up wire to assemble this module. We recommend 20 or 22 AWG stranded wire in red and black.</p>
+<p>The first step is to prepare four 13cm (5") lengths of wire- two red, and two black. Strip the sleeve 1cm on both ends.</p>
+<p>You also need two lengths of wire that will connect from the front panel to the Micronova board inside your case. Make sure you have enough length to reach and strip the sleeve 1cm on both ends.</p>
+<p>Mount the switch in the panel, making sure that the <code>-</code> is facing upwards. The panel's switch cutout has a very tight fit, so you may have to compress the plastic springs on the switch to get it to snap into place.</p>
+<p><img alt="Photo of the rocker switch being placed through the cutout in the panel" src="../images/front-2-switch-placement.jpg" />
+<img alt="Photo of the rocker switch mounted to the panel" src="../images/front-3-switch-mounted.jpg" /></p>
+<p>Mount the two DC barrel jacks to the panel, placing the washer and nut onto the jack from the front side of the panel.</p>
+<p><img alt="Photo of the first DC barrel jack placed through the top hole in the panel" src="../images/front-4-barrel-jack-placement.jpg" />
+<img alt="Photo of the washer added to the DC barrel jack" src="../images/front-5-barrel-jack-washer.jpg" />
+<img alt="Photo of the nut added to the DC barrel jack" src="../images/front-5-barrel-jack-nut.jpg" />
+<img alt="Photo of both DC barrel jacks mounted to the panel" src="../images/front-6-both-barrel-jacks-mounted.jpg" /></p>
+<p>Wire the jacks and switch together as shown below, being care to wire the the correct leads on the barrel jacks.</p>
+<p><img alt="Illustration of the front panel wiring" class="dark-invert" src="../images/front-wiring.svg" /></p>
+<p>With everything wired up, give it a quick test by plugging in a power cable and making sure that the switch illuminates when switched on. If it does not illuminate or if it stays illuminated even when off, double-check your wiring <strong>before</strong> continuing.</p>
+<p>If everything checks out, mount the panel in your rack.</p>
+<p><img alt="Photo of the panel placed in a rack" src="../images/front-entry-2.jpg" /></p>
+<p>Run the power wires to your Micronova and use the screw terminals to connect them.</p>
+<p><img alt="Illustration of power connections" class="dark-outline" src="../images/front-panel-screw-terminal-power.svg" /></p>
+<h2 id="all-done">All done<a class="headerlink" href="#all-done" title="Permanent link">#</a></h2>
+<p>Congratulations! You've finished your very own Micronova!</p>
+<p>Now that it's all put together go check out the <a href="../">User's Guide</a> and please show us your work by tweeting at <a href="https://twitter.com/wntrblm">@wntrblm</a> or tagging <a href="https://instagram.com/wntrblm">@wntrblm</a> in your instagram post.</p></article>
+</main><footer>
+        <ul>
+          <li>
+            © 2024
+            Winterbloom · Alethea Flowers
+          </li>
+          <li>
+            Published under
+            <a
+              href="https://github.com/wntrblm/Micronova/blob/main/docs/LICENSE">
+              CC BY-SA 4.0
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="updated">
+            Last updated on 2024/5/27
+          </li>
+          <li>
+            <a href="https://github.com/wntrblm/Micronova/edit/main/user_guide/docs/build.md">Edit this page on GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:support@winterbloom.com">
+              Send us a message
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <script type="module" src="../winter.js"></script>
+      
+        <script src="../search/main.js"></script>
+      
+    
+  </body>
+</html>

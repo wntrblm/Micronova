@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" /><!-- Page author --><link rel="canonical" href="https://micronova.wntr.dev/" /><link
+  rel="shortcut icon"
+  sizes="192x192"
+  href="/icon.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="192x192"
+  href="/icon.png" />
+
+<meta name="generator" content="mkdocs-1.6.0" /><!-- Title --><title>
+          Micronova
+          
+            
+          
+
+          
+        </title><link rel="stylesheet" href="winter.css" /></head>
+
+  <body
+    class=""
+    data-page=""><header>
+        <nav role="navigation" aria-label="main navigation">
+          <ul>
+            <li>
+              <a href=".">Micronova</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img class="logo" src="/winterbloom.png" alt="Winterbloom logo" />
+            </li>
+          </ul>
+        </nav>
+        <nav role="navigation" aria-label="secondary navigation">
+          <ul class="has-dividers"><li>
+                <a
+                  aria-current
+                  href=".">
+                  Manual
+                </a>
+              </li><li>
+                <a
+                  
+                  href="build/">
+                  Build
+                </a>
+              </li></ul>
+          <ul><li>
+                <winter-icon>search</winter-icon>
+              </li><li>
+              <winter-dark-mode></winter-dark-mode>
+            </li>
+          </ul>
+        </nav>
+      </header><main
+      class="hide-title">
+  <article class="content"><h1 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">#</a></h1>
+<p><a href="https://winterbloom.com/shop/micronova">Micronova</a> is a tiny but mighty Eurorack power supply. It is our love letter to the DIY ethic of the Eurorack community. It packs a lot of useful little features into a small frame and it's perfect for custom rack builds.</p>
+<div class="toc">
+<ul>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#getting-support-and-help">Getting support and help</a></li>
+<li><a href="#safety">Safety</a></li>
+<li><a href="#powering-micronova">Powering Micronova</a></li>
+<li><a href="#connecting-modules">Connecting modules</a></li>
+<li><a href="#power-limits">Power limits</a></li>
+<li><a href="#busboard">Busboard</a></li>
+<li><a href="#daisy-chaining">Daisy chaining</a></li>
+<li><a href="#power-switch">Power switch</a></li>
+<li><a href="#output-terminals">Output terminals</a></li>
+<li><a href="#front-entry-kit">Front entry kit</a></li>
+<li><a href="#dimensions">Dimensions</a></li>
+<li><a href="#open-source-hardware-software">Open source hardware &amp; software</a></li>
+<li><a href="#warranty-disclaimers-and-limits">Warranty, disclaimers, and limits</a></li>
+<li><a href="#acknowledgments-and-thanks">Acknowledgments and thanks</a></li>
+</ul>
+</div>
+<h2 id="specifications">Specifications<a class="headerlink" href="#specifications" title="Permanent link">#</a></h2>
+<p><img alt="An illustration of Micronova" src="images/micronova.svg" /></p>
+<ul>
+<li>Available <a href="https://winterbloom.com/shop/micronova">assembled</a> or as a <a href="https://winterbloom.com/shop/micronova-kit">kit</a></li>
+<li>A tiny <code>100mm x 30mm</code> board with <code>M3</code> mounting holes</li>
+<li>Provides <code>+12V @ 1A</code>, <code>-12V @ 300mA</code>, and <code>+5V @ 500mA</code></li>
+<li>Includes two 16-pin Eurorack power headers</li>
+<li>Requires a <code>15V to 20V</code> <strong>center positive</strong> DC power supply</li>
+<li>Multiple units can be daisy chained</li>
+<li>Reverse-polarity, over-current, and over-temperature protection</li>
+<li>Optional <code>4 HP</code> <a href="https://winterbloom.com/shop/micronova-front-entry-kit">front entry kit</a></li>
+<li>Optional <a href="https://winterbloom.com/shop/micronova-busboard">busboard</a></li>
+<li><a href="https://www.modulargrid.net/e/winterbloom-micronova">ModularGrid page</a></li>
+</ul>
+<h2 id="getting-support-and-help">Getting support and help<a class="headerlink" href="#getting-support-and-help" title="Permanent link">#</a></h2>
+<p>We want you to have a wonderful experience with your power supply. If you need help or run into problems, please reach out to us. <a href="mailto:support@winterbloom.com">Email</a> is the best way for product issues, whereas <a href="https://discord.gg/UpfqghQ">Discord</a> and <a href="https://github.com/wntrblm/Micronova/issues">GitHub</a> are great for getting advice and help on how to customize your module.</p>
+<ul>
+<li>Send us <a href="mailto:support@winterbloom.com">an email</a></li>
+<li>File a bug <a href="https://github.com/wntrblm/Micronova/issues">on GitHub</a></li>
+<li>Reach out on the <a href="https://discord.gg/UpfqghQ">Discord</a></li>
+</ul>
+<h2 id="safety">Safety<a class="headerlink" href="#safety" title="Permanent link">#</a></h2>
+<p>Always use caution when working with electricity. While Micronova does not use mains power directly and operates on relatively low voltages (<code>-12V to 20V DC</code>), there is always risk. Never add or remove downstream devices or modify power connections while the system is powered on. Make sure to use an <a href="#powering-micronova">appropriate AC to DC power supply</a> and to stay within the specified <a href="#power-limits">power limits</a>. Use high-quality cables and appropriately sized wires when making connections.</p>
+<p>Micronova includes some protection features:</p>
+<ul>
+<li>It can withstand at least <code>30V</code> of reverse polarity on the power inputs</li>
+<li>It has transient voltage suppression on the power inputs</li>
+<li>It has a polyfuse to limit current during a short circuit fault</li>
+<li>It has independent over-current, short circuit, and over-temperature protection on each of the downstream power rails</li>
+</ul>
+<p>These protection features do not avert all risks involved with operating a power supply. Micronova can still experience dangerous faults from unexpected events. Improper usage significantly increases the possibility of electric shock and fire. <strong>Always use caution</strong>.</p>
+<h2 id="powering-micronova">Powering Micronova<a class="headerlink" href="#powering-micronova" title="Permanent link">#</a></h2>
+<p>Micronova requires a <code>15 to 20V DC</code> power supply that can provide <strong>at least</strong> <code>1A</code>. Micronova has multiple, <em>interconnected</em> power input connections. It can be powered using one of the two DC barrel jacks or one of the two screw terminal blocks on the upper side of the board.</p>
+<p><img alt="An illustration of Micronova highlighting the power input connection" src="images/micronova-power-in.svg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Never connect more than one upstream power supply at a time to Micronova. The multiple DC jacks and screw terminals for <a href="#daisy-chaining">daisy chaining</a> multiple Micronova units to a single upstream supply. Only <strong>one</strong> upstream power supply should be connected. Connecting multiple upstream power supplies can result in irreversible damage, electric shock, and fire.</p>
+</div>
+<p>In most cases, you'll want to use one of the DC barrel jacks. Both Micronova and the optional <a href="#front-entry-kit">front entry panel</a> have DC barrel jacks, and either of the two jacks will work. They accept plugs that have a <code>2.1mm</code> inner diameter and a <code>5.5mm</code> outer diameter. The plug should be <strong>center positive</strong>.</p>
+<p><img alt="Illustration of DC barrel jack and polarity" src="images/jack-and-plug-dimensions.svg" /></p>
+<p>These AC to DC power supplies are recommended if you're planning to use the DC barrel jacks:</p>
+<ul>
+<li>Mean Well <a href="https://www.digikey.com/en/products/detail/mean-well-usa-inc/GST60A15-P1J/7703713">GST60A15-P1J</a> which provides <code>15V @ 4A (60W)</code>, enough to power about four Micronovas.</li>
+<li>Mean Well <a href="https://www.digikey.com/en/products/detail/mean-well-usa-inc/GST40A15-P1J/7703705">GST40A15-P1J</a> which provides <code>15V @ 2.6A (40W)</code>, enough to power two or three Micronovas.</li>
+<li>Mean Well <a href="https://www.digikey.com/en/products/detail/mean-well-usa-inc/GST25A15-P1J/7703649">GST25A15-P1J</a> which provides <code>15V @ 1.6A (25W)</code>, enough to power one Micronova.</li>
+</ul>
+<p>All of these power supplies are rated for international use and require a separate <a href="https://en.wikipedia.org/wiki/IEC_60320#C13/C14_coupler">IEC C13 cord</a> to connect to your wall outlet. These cords are incredibly common and often used with computers, monitors, and professional audio and video equipment and should be readily available from local retailers.</p>
+<p><img alt="Photo of an IEC C13 cord, photo from Adafruit Industries" src="images/iec-cord.jpg" /></p>
+<p>If you need help finding a power supply or want to double check compatibility before purchasing, please <a href="mailto:support@winterbloom.com">reach out to us</a>.</p>
+<p>In some advanced or unusual racks, you may want to power Micronova through its screw terminals. This might be the case if you're using a large DC power supply such as Mean Well's <a href="https://www.digikey.com/en/products/detail/mean-well-usa-inc/RS-150-15/7706170">RS series</a>. Ensure that the power supply's voltage output is between <code>15V and 20V</code>. You can use either of the two screw terminal blocks on the upper side of the board- just not the one labeled <code>switch</code>. Connect the power supply to Micronova using appropriately sized hook up wire (<code>20 or 22 AWG</code> stranded is recommended).</p>
+<p><img alt="Illustration of Micronova powered using the screw terminals" class="dark-outline" src="images/screw-terminal-power.svg" /></p>
+<h2 id="connecting-modules">Connecting modules<a class="headerlink" href="#connecting-modules" title="Permanent link">#</a></h2>
+<p>Connect your modules to Micronova using either <em>16-to-10</em> pin IDC cables or <em>16-to-16</em> pin IDC cables.</p>
+<div class="columns">
+    <div class="column">
+        <img src="images/16-to-10-pin-cable.jpg" alt="Photo of a 16-to-10 pin IDC cable">
+    </div>
+    <div class="column">
+        <img src="images/16-to-16-pin-cable.jpg" alt="Photo of a 16-to-16 pin IDC cable">
+    </div>
+</div>
+
+<p>Be careful to note the polarity of the cable and the connectors on your modules. Polarity indication on modules varies from manufacturer to manufacturer, but most note the side that the red stripe (<code>-12V</code>) should be on.</p>
+<p><img alt="Photo of a module indicating power cable polarity" src="images/power-mark.jpg" /></p>
+<p>Micronova uses keyed headers so it shouldn't be normally possible to connect power cables backwards on that end.</p>
+<p><img alt="Photo of Micronova's keyed headers" src="images/keyed-headers.jpg" /></p>
+<p>If you'd like to power more than two modules, you can use a <a href="#busboard">Busboard</a> or a <a href="https://www.thonk.co.uk/shop/bus-cables/">flying bus cable</a>.</p>
+<h2 id="power-limits">Power limits<a class="headerlink" href="#power-limits" title="Permanent link">#</a></h2>
+<p>Micronova has limits on how much power it can provide to downstream modules:</p>
+<ul>
+<li>+12V rail: <code>1A</code></li>
+<li>-12V rail: <code>300mA</code></li>
+<li>+5V rail: <code>500mA</code></li>
+</ul>
+<p>When connecting multiple modules make sure that the overall current draw does not exceed these limits. Check with each module's manual or manufacturer to determine the current required. <a href="https://modulargrid.net">Modulargrid</a> is also a valueable resource for estimating your system's power requirements. If your set up requires more power than a single Micronova can provide, you can <a href="#daisy-chaining">daisy chain</a> multiple units.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Overloading Micronova can cause irreversible damage to Micronova and connected modules. While Micronova has over-current protection on each rail, the voltage drop-out that occurs when this protection is activated can still cause damage in rare cases.</p>
+</div>
+<p>There are a few ways you can check to make sure that you're within Micronova's limits. The first, and easiest, is to check the four LEDs on the board. They should all be illuminated and three of them should be roughly the same brightness, with the one near the <code>5V</code> label being slightly dimmer. Any LEDs that are not illuminated or are very faint indicate an issue with your setup. The photo below shows a correctly functioning unit.</p>
+<p><img alt="Photo of Micronova's LEDs" src="images/leds.jpg" /></p>
+<p>The second way is to check the temperature of Micronova's DC-DC converters. These are the three black boxes on the lower-left of the board. You can use a touchless thermometer, thermal camera, or touch the top of them with your finger. It is normal for them to be slightly warm but excessive heat means that Micronova is overloaded.</p>
+<p><img alt="Photo of highlighting Micronova's DC-DC converters" src="images/dc-dc-converters.jpg" /></p>
+<h2 id="busboard">Busboard<a class="headerlink" href="#busboard" title="Permanent link">#</a></h2>
+<p>Micronova's two power outputs can be expanded using the <a href="https://winterbloom.com/shop/micronova-busboard">optional busboard</a>. You'll need to connect Micronova to the busboard using the included 16 pin IDC cable.</p>
+<p><img alt="Illustration of Micronova and the busboard connected together" src="images/busboard-connection.svg" /></p>
+<p>When connecting multiple modules, make sure to stay within Micronova's <a href="#power-limits">power limits</a>. If you need more power than one Micronova can provide, you can <a href="#daisy-chaining">daisy chain</a> two or more units.</p>
+<h2 id="daisy-chaining">Daisy chaining<a class="headerlink" href="#daisy-chaining" title="Permanent link">#</a></h2>
+<p>You can power multiple Micronova units from a single DC power supply. If the Micronova units are in separate cases, you can connect them together using a <a href="https://www.thonk.co.uk/shop/right-angle-barrel/">DC jumper cable</a>:</p>
+<p><img alt="Illustration of two units connected with a jumper cable" class="dark-outline" src="images/daisy-chain-dc.svg" /></p>
+<p>If you have more than one unit within a single case, you can connect them together using the screw terminal blocks:</p>
+<p><img alt="Illustration of two units connected using the screw terminal blocks" class="dark-outline" src="images/daisy-chain-terminal-blocks.svg" /></p>
+<p>You can use any combination of the DC jacks and screw terminals to daisy chain <strong>as long as there is only one power supply</strong>. Make sure your power supply can provide enough power to satisfy the current demand of the Micronova units. A good rule of thumb is that you need <code>1A</code> to <code>2A</code> for each Micronova.</p>
+<h2 id="power-switch">Power switch<a class="headerlink" href="#power-switch" title="Permanent link">#</a></h2>
+<p>In some cases you may want to add a power switch to Micronova, such as cases where it's hard to unplug or reach the power supply. There are a few options.</p>
+<p>First, if you're using the <a href="#front-entry-kit">front entry kit</a> there's a power switch on there, so you're all set!</p>
+<p><img alt="Photo of the front entry kit" src="images/front-entry-2.jpg" /></p>
+<p>Second, you can use an <a href="https://www.adafruit.com/product/1125">in-line DC power switch</a>. This is connected between your AC to DC power supply and Micronova's DC barrel jack. This is useful for small cases where it's easy to reach the power cable and helps reduce wear on the power cable since you don't have to constantly plug and unplug it.</p>
+<p><img alt="Illustration of Micronova with an in-line DC power switch" src="images/in-line-switch.svg" /></p>
+<p>Lastly, you can wire a switch to Micronova's <code>switch</code> screw terminal block. This is useful in cases where the power cable is not easily accessible or you're powering Micronova through a large DC power supply. We recommend a switch like the <a href="https://www.digikey.com/en/products/detail/e-switch/R1973ABLKGILGF3/3778047">E-Switch EG5448-ND</a>. If you get an illuminated switch, make sure the LED can handle <code>15-20V</code>.</p>
+<p>You'll need to wire each terminal of the switch to the terminal block as shown:</p>
+<p><img alt="Illustration of wiring a switch to Micronova's switch terminal block" src="images/switch-terminal-wiring.svg" /></p>
+<p>You'll also need to sever the copper trace beneath the switch terminal block.</p>
+<p><img alt="Illustration of the switch terminal's copper connection" src="images/switch-cut.svg" /></p>
+<p>The trace is shown in red. Use a sharp utility knife or razor blade and carefully cut along the dot lines. There is extra empty space around the trace to make it easier to cut without damaging anything.</p>
+<p><img alt="Photo of the trace severed" src="images/switch-severed.jpg" /></p>
+<p>If you change your mind later and no longer need the switch, you can either place a jumper wire between the two terminals on the terminal block or solder the two pads next to the severed trace together.</p>
+<h2 id="output-terminals">Output terminals<a class="headerlink" href="#output-terminals" title="Permanent link">#</a></h2>
+<p>In addition to the two Eurorack 16-pin power headers, Micronova can provide downstream power through the two screw terminals located on the lower side of the board.</p>
+<p><img alt="Illustration of Micronova's downstream power terminals" class="dark-outline" src="images/downstream-terminals.svg" /></p>
+<p>Always be aware of Micronova's <a href="#power-limits">power limits</a> when connecting downstream devices.</p>
+<h2 id="front-entry-kit">Front entry kit<a class="headerlink" href="#front-entry-kit" title="Permanent link">#</a></h2>
+<p>If you prefer connecting your case's power supply through the front, the <a href="https://winterbloom.com/shop/micronova-front-entry-kit">optional front entry kit</a> provides a <code>4 HP</code> panel with two DC barrel jacks and an illuminated power switch.</p>
+<p><img alt="Photo of the front entry kit" src="images/front-entry.jpg" /></p>
+<p>This is only available as a kit, please refer to the <a href="build/#front-entry-kit">build guide</a> for instructions on how to assemble and connect the front entry kit.</p>
+<h2 id="dimensions">Dimensions<a class="headerlink" href="#dimensions" title="Permanent link">#</a></h2>
+<p>If you'd like to physically mount your Micronova in your case, the following dimensions may be useful.</p>
+<p><img alt="An illustration of Micronova's dimensions" class="dark-invert" src="images/micronova-dimensions.svg" /></p>
+<p>You can <a href="images/micronova-dimensions.svg">download the SVG</a> and you can also refer to the <a href="https://kicad.org/">KiCAD</a> files for the <a href="https://github.com/wntrblm/Micronova/tree/main/hardware/board">board's hardware design</a>.</p>
+<h2 id="open-source-hardware-software">Open source hardware &amp; software<a class="headerlink" href="#open-source-hardware-software" title="Permanent link">#</a></h2>
+<p>Micronova is completely open source and hacking is encouraged.</p>
+<p>The <a href="https://github.com/wntrblm/Micronova/tree/main/hardware">hardware designs</a> are available under the permissive <a href="https://cern-ohl.web.cern.ch/">CERN-OHL-P v2</a> and is designed using <a href="https://kicad.org/">KiCAD</a> which is free and open-source. You can open the hardware files using KiCAD or you can <a href="https://github.com/wntrblm/Micronova/tree/main/hardware/board/board.pdf">check out a PDF of the schematic</a>.</p>
+<p><img alt="Open Source Hardware Association mark" class="inline small" src="images/oshw.svg" /> Micronova is <a href="https://certification.oshwa.org/us002124.html">certified open source hardware</a></p>
+<p>Micronova has been used in the following projects:</p>
+<ul>
+<li><a href="https://github.com/tpcarlson/synth-diy/tree/main/cornucopia">Cornicopia</a> by <a href="https://github.com/tpcarlson">@tpcarlson</a></li>
+</ul>
+<p>If you make something based on Micronova, please <a href="#getting-support-and-help">let us know</a>! We'd love to add your project here.</p>
+<h2 id="warranty-disclaimers-and-limits">Warranty, disclaimers, and limits<a class="headerlink" href="#warranty-disclaimers-and-limits" title="Permanent link">#</a></h2>
+<p>Micronova is a subcomponent used by the customer as part of a larger overall system. Because Winterbloom does not have any control over other subcomponents within the customer's system (including, but not limited to, the AC to DC power supply used to provide power to Micronova and any modules powered by Micronova), Winterbloom bears no responsibility for any damage caused to other subcomponents.</p>
+<p>Micronova units purchased from Winterbloom have a warranty of six months from the date of purchase. This warranty covers any manufacturing defects in the module. It does not cover damage from due to incorrect handling, storage, or power, overvoltage events, or modifications.</p>
+<p>Please <a href="mailto:support@winterbloom.com">contact us</a> if you are experiencing issues with your unit. Units returned under warranty will either be refunded, replaced, or repaired at our discretion. You will be responsible for the cost of returning the module to Winterbloom.</p>
+<p>Because Eurorack has a vast number of possible combinations of power supplies, modules, cases, and accessories, it is impossible for us to guarantee compatibility with every possible configuration. We make a reasonable effort to test our products with several power supplies, cases, and other modules.</p>
+<p>We encourage tinkering, however, we will not refund, repair, or replace any products that have been modified.</p>
+<p>We have stress tested Micronova under the following conditions. These are provided for reference only; we do not guarantee that that the product will function under these conditions or continue to function if exposed to these circumstances.</p>
+<ul>
+<li>Continuous run time of at least <code>48 hours</code></li>
+<li>Overvoltage at power input up to <code>24V</code></li>
+<li>Undervoltage at power input down to <code>13V</code></li>
+<li>Reverse voltage at power input up to <code>30V</code></li>
+<li>Short circuit at power outputs triggers thermal overload</li>
+<li><code>+12V</code> power output up to <code>2A</code> before thermal overload</li>
+<li><code>-12V</code> power output up to <code>1A</code> before thermal overload</li>
+<li><code>5V</code> power output up to <code>1A</code> before thermal overload</li>
+<li><code>1 hour</code> thermal overload recoverable</li>
+<li>Polyfuse trip time under <code>5 seconds</code></li>
+<li>Polyfuse recovery time under <code>1 minute</code></li>
+</ul>
+<h2 id="acknowledgments-and-thanks">Acknowledgments and thanks<a class="headerlink" href="#acknowledgments-and-thanks" title="Permanent link">#</a></h2>
+<p>Micronova would not be possible without the support of Winterbloom's incredible community.</p></article>
+</main><footer>
+        <ul>
+          <li>
+            © 2024
+            Winterbloom · Alethea Flowers
+          </li>
+          <li>
+            Published under
+            <a
+              href="https://github.com/wntrblm/Micronova/blob/main/docs/LICENSE">
+              CC BY-SA 4.0
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="updated">
+            Last updated on 2024/5/27
+          </li>
+          <li>
+            <a href="https://github.com/wntrblm/Micronova/edit/main/user_guide/docs/index.md">Edit this page on GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:support@winterbloom.com">
+              Send us a message
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <script type="module" src="winter.js"></script>
+      
+        <script src="search/main.js"></script>
+      
+    
+  </body>
+</html>
