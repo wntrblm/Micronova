@@ -227,6 +227,12 @@ The [hardware designs] are available under the permissive [CERN-OHL-P v2] and is
 
 ![Open Source Hardware Association mark](images/oshw.svg){: .inline .small } Micronova is [certified open source hardware](https://certification.oshwa.org/us002124.html)
 
+Micronova has been used in the following projects:
+
+* [Cornicopia](https://github.com/tpcarlson/synth-diy/tree/main/cornucopia) by [@tpcarlson](https://github.com/tpcarlson)
+
+If you make something based on Micronova, please [let us know](#getting-support-and-help)! We'd love to add your project here.
+
 [hardware designs]: https://github.com/wntrblm/Micronova/tree/main/hardware
 [CERN-OHL-P v2]: https://cern-ohl.web.cern.ch/
 [KiCAD]: https://kicad.org/
